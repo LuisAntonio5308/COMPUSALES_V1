@@ -5,9 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { Subject } from 'rxjs';
+
+import { FooterComponent } from './Posts/footer/footer.component';
+
+
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
