@@ -7,17 +7,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material/button';
-
+import {MatTreeModule} from '@angular/material/tree';
 import { Subject } from 'rxjs';
 
 import { FooterComponent } from './Posts/footer/footer.component';
 import { DialogComponent } from './Posts/dialog/dialog.component';
-
+import { TreeComponent } from './Posts/tree/tree.component';
 
 import { MatChipListboxComponent } from './Posts/mat-chip-listbox/mat-chip-listbox.component';
 import { ToolbarOverviewExample } from './Posts/toolbar-overview-example/toolbar.component';
 import { TableFilteringExample } from './Posts/table-filtering-example/table-filtering-example';
-
+import { ProgressBarConfigurableExample } from './Posts/progress-bar-indeterminate-example/progress-bar';
 
 
 
@@ -28,6 +28,7 @@ import { TableFilteringExample } from './Posts/table-filtering-example/table-fil
     AppComponent,
     FooterComponent,
     MatChipListboxComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -38,11 +39,15 @@ import { TableFilteringExample } from './Posts/table-filtering-example/table-fil
     MatDialogModule,
     TableFilteringExample,
     MatButtonModule,
-    DialogComponent
+    DialogComponent,
+    MatTreeModule,
+    TreeComponent,
+    ProgressBarConfigurableExample
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }import { MatChipListbox } from '@angular/material/chips';
+
 
 
