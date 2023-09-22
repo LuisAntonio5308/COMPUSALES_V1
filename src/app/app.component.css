@@ -5,6 +5,8 @@ main{
 }
 body{
 heigh:665px;
-  background-image: url("https://carontestudio.com/img/caronte-web-estudio-logo.png");
-  
+  background-image: url("https://i.pinimg.com/originals/43/51/3d/43513de8592c2944006adad0045fadcd.gif");
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center center;
 }
