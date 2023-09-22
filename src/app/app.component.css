@@ -1,4 +1,10 @@
 main{
     width: 80%;
     margin: 1rem auto;
+    
+}
+body{
+heigh:665px;
+  background-image: url("https://carontestudio.com/img/caronte-web-estudio-logo.png");
+  
 }
