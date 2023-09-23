@@ -8,3 +8,14 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* En tu archivo de estilos CSS */
+.table-container {
+    max-width: 100%; /* Ajusta el ancho máximo según tus necesidades */
+    margin: 0 auto; /* Centra horizontalmente el contenido de la tabla */
+  }
+  
+  /* Puedes agregar estilos adicionales según sea necesario */
+  /* Cambia el color de fondo de la tabla */
+
+  
