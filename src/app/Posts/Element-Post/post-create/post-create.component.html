@@ -28,10 +28,26 @@
       Ingrese Algo de contenido
     </mat-error>
     </mat-form-field>
+
+    <mat-form-field>
+      <textarea 
+      matInput rows="6" 
+      name = "price"
+      ngModel
+      required
+      placeholder="$ Precio"
+      #content="ngModel">
+    </textarea>
+    <mat-error 
+    *ngIf="content.invalid">
+      Ingrese un Precio
+    </mat-error>
+    </mat-form-field>
+
     <button 
     mat-raised-button 
     color = "primary"
-    type="submit">Guardar Publicación
+    type="submit">Guardar Computadora
     </button>
   </form>
 </mat-card>

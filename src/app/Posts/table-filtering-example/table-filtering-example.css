@@ -1,18 +1,5 @@
 /* Structure */
 table {
+    background-color: #7B1FA2;
     width: 100%;
   }
-  
-  .mat-mdc-form-field {
-    font-size: 14px;
-    width: 100%;
-  }
-  /* Cambia el color de fondo de la tabla */
-table-filtering-example table {
-  background-color: #7B1FA2;
-}
-
-/* También puedes ajustar el color de fondo de las filas pares, si es necesario */
-table-filtering-example tr:nth-child(even) {
-  background-color: #7B1FA2;
-}
