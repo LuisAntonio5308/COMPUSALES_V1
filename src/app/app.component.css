@@ -4,11 +4,12 @@ main{
     
 }
 body{
-  height: 800px;
+  height: 900px;
   background-image: url("https://i.pinimg.com/originals/43/51/3d/43513de8592c2944006adad0045fadcd.gif");
   background-size: cover;
   background-repeat:no-repeat;
   background-position: center center;
+  background-attachment: fixed;
 }
 .purple-background {
   background-color: purple;
