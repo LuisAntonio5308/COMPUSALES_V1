@@ -39,6 +39,7 @@ import { ToolbarOverviewExample } from './Posts/toolbar-overview-example/toolbar
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -64,7 +65,12 @@ import { ToolbarOverviewExample } from './Posts/toolbar-overview-example/toolbar
     MatToolbarModule,
     MatIconModule,
     MatMenuModule,
-    FormsModule
+    FormsModule,
+    MatCardModule,
+    MatInputModule,
+    MatExpansionModule,
+    
+
 
   ],
   providers: [PostService],
