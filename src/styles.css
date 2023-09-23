@@ -17,5 +17,28 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   
   /* Puedes agregar estilos adicionales según sea necesario */
   /* Cambia el color de fondo de la tabla */
-
+/* Cambia el color de fondo de la tabla */
+table-filtering-example table {
+    background-color: #7B1FA2;
+  }
+  
+  /* Ajusta el color de fondo de todas las filas */
+  table-filtering-example tr {
+    background-color: #7B1FA2;
+  }
+  
+  /* Asegúrate de que las filas impares mantengan el mismo color de fondo */
+  table-filtering-example tr:nth-child(odd) {
+    background-color: #7B1FA2;
+  }
+  /* Cambia el color de fondo de la tabla y de todas las filas */
+table-filtering-example table {
+    background-color: #7B1FA2;
+  }
+  
+  /* Ajusta el color de texto en las celdas para que sea legible en el fondo morado */
+  table-filtering-example td {
+    color: white; /* Cambia el color del texto a blanco o el color deseado */
+  }
+  
   
