@@ -7,8 +7,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material/button';
-import {MatTreeModule} from '@angular/material/tree';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
 
+
+
+import {MatTreeModule} from '@angular/material/tree';
 import { Subject } from 'rxjs';
 
 import { FooterComponent } from './Posts/footer/footer.component';
@@ -16,11 +21,10 @@ import { DialogComponent } from './Posts/dialog/dialog.component';
 import { TreeComponent } from './Posts/tree/tree.component';
 
 import { MatChipListboxComponent } from './Posts/mat-chip-listbox/mat-chip-listbox.component';
-import { ToolbarOverviewExample } from './Posts/toolbar-overview-example/toolbar.component';
 import { TableFilteringExample } from './Posts/table-filtering-example/table-filtering-example';
 import { ProgressBarConfigurableExample } from './Posts/progress-bar-indeterminate-example/progress-bar';
 
-
+import { ToolbarOverviewExample } from './Posts/toolbar-overview-example/toolbar.component';
 
 
 
@@ -29,13 +33,13 @@ import { ProgressBarConfigurableExample } from './Posts/progress-bar-indetermina
     AppComponent,
     FooterComponent,
     MatChipListboxComponent,
+    ToolbarOverviewExample
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ToolbarOverviewExample,
     MatChipsModule,
     MatDialogModule,
     TableFilteringExample,
@@ -43,7 +47,11 @@ import { ProgressBarConfigurableExample } from './Posts/progress-bar-indetermina
     DialogComponent,
     MatTreeModule,
     TreeComponent,
-    ProgressBarConfigurableExample
+    ProgressBarConfigurableExample,
+    MatToolbarModule,
+    MatIconModule,
+    MatMenuModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

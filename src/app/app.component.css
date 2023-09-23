@@ -10,3 +10,19 @@ heigh:665px;
   background-repeat:no-repeat;
   background-position: center center;
 }
+.purple-background {
+  background-color: purple;
+  /* Otras propiedades de estilo según sea necesario */
+}
+/* styles.css o tree.component.css */
+.small-tree {
+  font-size: 14px; /* Reduce el tamaño de la fuente */
+  max-height: 0;   /* Oculta el árbol al establecer su altura máxima en 0 */
+  overflow: hidden; /* Oculta el contenido que excede el tamaño máximo */
+  transition: max-height 0.3s ease-in-out; /* Agrega una transición suave para la animación */
+}
+
+.small-tree.active {
+  max-height: 200px; /* Muestra el árbol al establecer una altura máxima adecuada */
+}
+
