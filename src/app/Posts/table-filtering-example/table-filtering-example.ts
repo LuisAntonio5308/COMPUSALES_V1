@@ -25,6 +25,6 @@ const ELEMENT_DATA: PeriodicElement[] = [
   imports: [MatTableModule],
 })
 export class TableFilteringExample {
-  displayedColumns: string[] = ['position', 'name', 'weight'];
+  displayedColumns: string[] = ['position', 'name', 'Company'];
   dataSource = ELEMENT_DATA;
 }
