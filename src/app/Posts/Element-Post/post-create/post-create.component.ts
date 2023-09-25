@@ -1,30 +1,49 @@
-import { Component} from "@angular/core";
+import { Component, EventEmitter, Output } from "@angular/core";
+import { Title } from "@angular/platform-browser";
 import { Post } from "../../post.model";
 import { NgForm } from "@angular/forms";
 import { PostService } from "../../posts.service";
-import { withNoDomReuse } from "@angular/platform-browser";
 
 @Component({
-    selector: 'app-post-create',
-    templateUrl: './post-create.component.html',
-    styleUrls: ['./post-create.component.css']
-  })
+    
+  selector: 'app-post-create',
+  templateUrl: './post-create.component.html',
+  styleUrls: ['./post-create.component.css']
+})
+export class PostCreateComponent {
 
-export class PostCreateComponent{
-  ///segunda modificacion
+  /*
+  enteredValue = ''; // Cadena vacía
+  newPost = 'NO HAY CONTENIDO'; // Variable vacía
+  posts: string[] = []; // Array para almacenar publicaciones
+  */
   enteredTitle = '';
   enteredContent = '';
+  enteredPrice: number; // Declaración de la variable para el precio
 
-  constructor(public postsService: PostService){}
 
-  onAddPost(form: NgForm){
+  constructor(public postsService:PostService){}
+
+
+  onAddPost(form:NgForm) {  
     if(form.invalid){
-      return;
-      }
-        this.postsService.addPost(form.value.title, form.value.content);
-        form.resetForm();
+      return
     }
-  }
+    
+    const post:Post = {
 
+      
+      title: form.value.title,
+      content: form.value.content,
+      price: this.enteredPrice// Asegúrate de tener la propiedad "enteredPrice" en el componente
+
+    };
+    this.enteredTitle = "";
+    this.enteredContent = "";
+    this.postsService.addPost(form.value.title, form.value.content, form.value.price)
+    form.resetForm();
+    
+  }
+}
 
 

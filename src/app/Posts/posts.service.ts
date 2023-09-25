@@ -1,35 +1,42 @@
-import {Injectable, assertPlatform} from "@angular/core";
+import { Injectable } from "@angular/core";
 import { Post } from "./post.model";
-import { Subject } from "rxjs";
+import { Subject, Observable } from "rxjs";
 
-@Injectable({providedIn: 'root'})
+@Injectable({ providedIn: 'root' })
+export class PostService {
+  private posts: Post[] = [];
+  private postUpdate = new Subject<Post[]>();
 
-export class PostService{
-    private posts: Post[] = []; //Primera Matriz
-    private postsUpdate = new Subject<Post[]>(); //Actualizacion de los datos
+  getPosts() {
+    return [...this.posts];
+  }
 
-    getPosts(){
-        return[...this.posts];//segunda Matriz
-    }
-    
-    getPostUpdateListerner(){
-        return this.postsUpdate.asObservable();
-    }
+  getPostUpdateListerner() {
+    return this.postUpdate.asObservable();
+  }
 
-    addPost(title: string, content: string){
-        const post: Post = {
-            title: title, 
-            content: content}
-        this.posts.push(post);
-        this.postsUpdate.next([...this.posts]);
-    }
+  addPost(title: string, content: string, price:number) {
+    const post: Post = {
+      title: title,
+      content: content,
+      price:price
+    };
 
-    //Eliminar Post
-    deletePost(post: Post) {
-        const index = this.posts.indexOf(post);
-        if (index !== -1) {
-          this.posts.splice(index, 1);
-          this.postsUpdate.next([...this.posts]);
-        }
+    this.posts.push(post);
+    this.postUpdate.next([...this.posts]);
+  }
+
+  deletePost(post: Post): Observable<void> {
+    return new Observable<void>((observer) => {
+      const index = this.posts.indexOf(post);
+      if (index !== -1) {
+        this.posts.splice(index, 1);
+        this.postUpdate.next([...this.posts]);
+        observer.next(); // Notificar que la eliminación se ha completado
+        observer.complete();
+      } else {
+        observer.error("El post no se encontró en la lista.");
       }
+    });
+  }
 }

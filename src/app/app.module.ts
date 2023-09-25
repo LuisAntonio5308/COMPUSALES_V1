@@ -31,6 +31,7 @@ import { MatChipListbox } from '@angular/material/chips';
 import { MatChipListboxComponent } from './Posts/mat-chip-listbox/mat-chip-listbox.component';
 import { TableFilteringExample } from './Posts/table-filtering-example/table-filtering-example';
 import { ProgressBarConfigurableExample } from './Posts/progress-bar-indeterminate-example/progress-bar';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 import { ToolbarOverviewExample } from './Posts/toolbar-overview-example/toolbar.component';
 
@@ -69,6 +70,7 @@ import { ToolbarOverviewExample } from './Posts/toolbar-overview-example/toolbar
     MatCardModule,
     MatInputModule,
     MatExpansionModule,
+    MatProgressBarModule
     
 
 
