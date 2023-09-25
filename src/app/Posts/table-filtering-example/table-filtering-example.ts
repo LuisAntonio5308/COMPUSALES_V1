@@ -12,9 +12,9 @@ export interface PeriodicElement {
 
 const ELEMENT_DATA: PeriodicElement[] = [
   {position: '', name: 'Hydrogen', Company: 'About Us'},
-  {position: '', name: 'Helium', Company: ''},
-  {position: '', name: 'Lithium', Company: ''},
-  {position: '', name: 'Beryllium', Company: ''},
+  {position: '', name: 'Helium', Company: 'Community'},
+  {position: '', name: 'Lithium', Company: 'Blog'},
+  {position: '', name: 'Beryllium', Company: 'Our Team'},
 ];
 
 @Component({
