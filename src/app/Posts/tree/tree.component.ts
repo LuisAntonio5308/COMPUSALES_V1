@@ -16,16 +16,13 @@ interface FoodNode {
 const TREE_DATA: FoodNode[] = [
   {
     name: 'Computadoras',
-    children: [{name: 'Apple'}, {name: 'Banana'}, {name: 'Fruit loops'}],
+    children: [{name: 'Agregar'}, {name: 'Mostrar'}, {name: 'Fruit loops'}],
   },
   {
     name: 'Laptops',
-    children: [{name: 'Apple'}, {name: 'Banana'}, {name: 'Fruit loops'}],
+    children: [{name: 'Agregar'}, {name: 'Mostrar'}, {name: 'Fruit loops'}],
   },
-  {
-    name: 'Monitores',
-    children: [{name: 'Apple'}, {name: 'Banana'}, {name: 'Fruit loops'}],
-  },];
+];
   /*{
     name: 'Vegetables',
     children: [

@@ -3,9 +3,9 @@
 <mat-accordion multi="true" *ngIf="posts.length > 0">
     <mat-expansion-panel *ngFor="let post of posts">
       <mat-expansion-panel-header >
-        {{post.title}}
+        Titulo: {{post.title}}
       </mat-expansion-panel-header>
-      <p>{{post.content}}</p>
+      <p>Contenido: {{post.content}}</p>
       <p>Precio: ${{ post.price }}</p> <!-- Mostrando el precio -->
       <mat-action-row>
         <button mat-button color="warn" (click)="eliminarPost(post)">ELIMINAR</button>
