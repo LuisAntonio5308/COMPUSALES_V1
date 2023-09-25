@@ -11,7 +11,7 @@ export interface PeriodicElement {
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {position: '', name: 'Hydrogen', Company: 'A'},
+  {position: '', name: 'Hydrogen', Company: 'About Us'},
   {position: '', name: 'Helium', Company: ''},
   {position: '', name: 'Lithium', Company: ''},
   {position: '', name: 'Beryllium', Company: ''},
