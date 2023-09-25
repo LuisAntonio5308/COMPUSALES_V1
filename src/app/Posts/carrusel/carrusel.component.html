@@ -1,0 +1,11 @@
+<button (click)="scrollLeft()">←</button>
+
+<div class="carrusel" cdkScrollable>
+  <div class="slide" *ngFor="let slide of slides">
+    {{slide}}
+  </div>
+</div>
+
+<button (click)="scrollRight()">→</button>
+
+  

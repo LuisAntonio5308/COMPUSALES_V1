@@ -5,6 +5,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
 import {MatExpansionModule} from '@angular/material/expansion';
 
+
 import {FormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -34,6 +35,8 @@ import { ProgressBarConfigurableExample } from './Posts/progress-bar-indetermina
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 import { ToolbarOverviewExample } from './Posts/toolbar-overview-example/toolbar.component';
+import { CarruselComponent } from './Posts/carrusel/carrusel.component';
+
 
 
 
@@ -48,7 +51,8 @@ import { ToolbarOverviewExample } from './Posts/toolbar-overview-example/toolbar
     MatChipListboxComponent,
     ToolbarOverviewExample,
     PostListComponent,
-    PostCreateComponent
+    PostCreateComponent,
+    CarruselComponent
     
   ],
   imports: [

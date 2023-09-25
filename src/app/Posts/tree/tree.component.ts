@@ -15,10 +15,18 @@ interface FoodNode {
 
 const TREE_DATA: FoodNode[] = [
   {
-    name: 'Fruit',
+    name: 'Computadoras',
     children: [{name: 'Apple'}, {name: 'Banana'}, {name: 'Fruit loops'}],
   },
   {
+    name: 'Laptops',
+    children: [{name: 'Apple'}, {name: 'Banana'}, {name: 'Fruit loops'}],
+  },
+  {
+    name: 'Monitores',
+    children: [{name: 'Apple'}, {name: 'Banana'}, {name: 'Fruit loops'}],
+  },];
+  /*{
     name: 'Vegetables',
     children: [
       {
@@ -30,8 +38,8 @@ const TREE_DATA: FoodNode[] = [
         children: [{name: 'Pumpkins'}, {name: 'Carrots'}],
       },
     ],
-  },
-];
+  },*/
+
 
 /**
  * @title Tree with nested nodes
@@ -46,7 +54,9 @@ const TREE_DATA: FoodNode[] = [
 export class TreeComponent {
   treeControl = new NestedTreeControl<FoodNode>(node => node.children);
   dataSource = new MatTreeNestedDataSource<FoodNode>();
+  tuFuncion(){
 
+  }
   constructor() {
     this.dataSource.data = TREE_DATA;
   }
