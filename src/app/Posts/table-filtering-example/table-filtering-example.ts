@@ -5,16 +5,15 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 export interface PeriodicElement {
-  name: string;
-  position: string;
+  help: string;
+  foll: string;
   Company: string;
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {position: '', name: 'Hydrogen', Company: 'About Us'},
-  {position: '', name: 'Helium', Company: 'Community'},
-  {position: '', name: 'Lithium', Company: 'Blog'},
-  {position: '', name: 'Beryllium', Company: 'Our Team'},
+  {help: 'Payments', foll: 'Facebook', Company: 'About Us'},
+  {help: 'Computers', foll: 'Instagram', Company: 'Community'},
+  {help: 'Laptops', foll: 'Twiter', Company: 'Blog'},
 ];
 
 @Component({
@@ -25,6 +24,6 @@ const ELEMENT_DATA: PeriodicElement[] = [
   imports: [MatTableModule],
 })
 export class TableFilteringExample {
-  displayedColumns: string[] = ['position', 'name', 'Company'];
+  displayedColumns: string[] = ['help', 'foll', 'Company'];
   dataSource = ELEMENT_DATA;
 }
