@@ -7,14 +7,14 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 export interface PeriodicElement {
   name: string;
   position: string;
-  weight: string;
+  Company: string;
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {position: '', name: 'Hydrogen', weight: ''},
-  {position: '', name: 'Helium', weight: ''},
-  {position: '', name: 'Lithium', weight: ''},
-  {position: '', name: 'Beryllium', weight: ''},
+  {position: '', name: 'Hydrogen', Company: 'A'},
+  {position: '', name: 'Helium', Company: ''},
+  {position: '', name: 'Lithium', Company: ''},
+  {position: '', name: 'Beryllium', Company: ''},
 ];
 
 @Component({
