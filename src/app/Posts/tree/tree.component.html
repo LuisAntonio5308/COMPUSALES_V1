@@ -2,7 +2,7 @@
   <!-- This is the tree node template for leaf nodes -->
   <mat-tree-node *matTreeNodeDef="let node" matTreeNodeToggle>
       {{node.name}}
-      <button mat-button (click)="tuFuncion()">Haz clic aquí</button>
+      <button mat-button (click)="openDialog()">Agregar</button>
   </mat-tree-node>
   <!-- This is the tree node template for expandable nodes -->
   <mat-nested-tree-node *matTreeNodeDef="let node; when: hasChild">
@@ -14,7 +14,6 @@
           </mat-icon>
         </button>
         {{node.name}}
-        <button mat-button (click)="tuFuncion()">Haz clic aquí</button>
       </div>
       <div [class.example-tree-invisible]="!treeControl.isExpanded(node)"
           role="group">

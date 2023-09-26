@@ -24,8 +24,6 @@ export class DialogComponent {
 
   openDialog() {
     this.dialog.open(PostCreateComponent);
-
-    
   }
 }
 /*

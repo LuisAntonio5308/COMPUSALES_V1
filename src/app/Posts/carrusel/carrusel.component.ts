@@ -1,5 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
-import { CdkScrollable } from '@angular/cdk/scrolling';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-carrusel',
@@ -7,15 +6,19 @@ import { CdkScrollable } from '@angular/cdk/scrolling';
   styleUrls: ['./carrusel.component.css']
 })
 export class CarruselComponent {
-  @ViewChild(CdkScrollable) scrollable: CdkScrollable;
+  images: string[] = [
+    'https://cc-prod.scene7.com/is/image/CCProdAuthor/design-carousels-sliders_00?$pjpeg$&jpegSize=300&wid=1440',
+    'url_de_la_imagen_2',
+    'url_de_la_imagen_3',
+    // Agrega más URLs de imágenes según sea necesario
+  ];
+  currentIndex: number = 0;
 
-  slides = ['Slide 1', 'Slide 2', 'Slide 3', 'Slide 4'];
-
-  scrollLeft() {
-    this.scrollable.scrollTo({left: (this.scrollable.measureScrollOffset('left') - 100)});
+  prevSlide() {
+    this.currentIndex = (this.currentIndex - 1 + this.images.length) % this.images.length;
   }
 
-  scrollRight() {
-    this.scrollable.scrollTo({left: (this.scrollable.measureScrollOffset('left') + 100)});
+  nextSlide() {
+    this.currentIndex = (this.currentIndex + 1) % this.images.length;
   }
 }

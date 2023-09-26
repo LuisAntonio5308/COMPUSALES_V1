@@ -1,11 +1,11 @@
-<button (click)="scrollLeft()">←</button>
-
-<div class="carrusel" cdkScrollable>
-  <div class="slide" *ngFor="let slide of slides">
-    {{slide}}
+<p>carrusel works!</p>
+<div class="carousel">
+    <button class="prev" (click)="prevSlide()">Anterior</button>
+    <div class="slide-container">
+      <div class="slide" *ngFor="let image of images; let i = index" [ngClass]="{ 'active': i === currentIndex }">
+        <img [src]="image" alt="Imagen {{ i + 1 }}" />
+      </div>
+    </div>
+    <button class="next" (click)="nextSlide()">Siguiente</button>
   </div>
-</div>
-
-<button (click)="scrollRight()">→</button>
-
   
