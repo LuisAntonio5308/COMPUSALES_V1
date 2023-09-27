@@ -21,11 +21,11 @@ interface FoodNode {
 const TREE_DATA: FoodNode[] = [
   {
     name: 'Computadoras',
-    children: [{name: 'Agregar'}],
+    children: [{name: ''}],
   },
   {
     name: 'Laptops',
-    children: [{name: 'Agregar'}],
+    children: [{name: ''}],
   },
 ];
 

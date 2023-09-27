@@ -36,6 +36,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 import { ToolbarOverviewExample } from './Posts/toolbar-overview-example/toolbar.component';
 import { CarruselComponent } from './Posts/carrusel/carrusel.component';
+import { PostDataService } from './Posts/post-data.service';
 
 
 
@@ -53,7 +54,8 @@ import { CarruselComponent } from './Posts/carrusel/carrusel.component';
     ToolbarOverviewExample,
     PostListComponent,
     PostCreateComponent,
-    CarruselComponent
+    CarruselComponent,
+    
     
   ],
   imports: [
@@ -75,7 +77,7 @@ import { CarruselComponent } from './Posts/carrusel/carrusel.component';
     MatCardModule,
     MatInputModule,
     MatExpansionModule,
-    MatProgressBarModule
+    MatProgressBarModule,
     
 
 
