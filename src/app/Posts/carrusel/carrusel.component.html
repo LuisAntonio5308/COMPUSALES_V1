@@ -1,3 +1,5 @@
+
+<h1 style="color: white; background-color: gray; text-align: center;">COMPUTADORAS</h1>
 <div class="carousel">
     <button class="prev" (click)="prevSlide()">Anterior</button>
     <div class="slide-container">
@@ -14,7 +16,7 @@
               </mat-action-row>
             </mat-expansion-panel>
         </div>
-          <p class="info-text mat-body-1" *ngIf="posts.length <= 0"> No hay Computadoras Agregadas</p>
+          <p class="info-text mat-body-1" style="color: white; background-color: 'primary';" *ngIf="posts.length <= 0"> No hay Computadoras Agregadas</p>
     </div>
     <button class="next" (click)="nextSlide()">Siguiente</button>
   </div>

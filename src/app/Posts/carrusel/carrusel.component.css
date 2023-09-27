@@ -5,7 +5,11 @@
     justify-content: center;
     position: relative;
   }
-  
+  .p{
+    
+    text-decoration-color: #fff;
+
+  }
   .slide-container {
     display: flex;
     overflow: hidden;
