@@ -27,6 +27,6 @@ import {MatCardModule} from '@angular/material/card';
 export class ProgressBarConfigurableExample {
   color: ThemePalette = 'primary';
   mode: ProgressBarMode = 'determinate';
-  value = 50;
-  bufferValue = 75;
+  value = 35;
+  bufferValue = 70;
 }

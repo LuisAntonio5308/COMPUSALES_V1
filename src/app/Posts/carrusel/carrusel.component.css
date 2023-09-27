@@ -1,19 +1,17 @@
 .carousel {
-    margin-top: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
   }
-  .p{
-    
-    text-decoration-color: #fff;
-
-  }
+  
   .slide-container {
     display: flex;
     overflow: hidden;
     position: relative;
+  
   }
   
   .slide {
@@ -63,6 +61,7 @@
   
   button {
     /* Tus estilos para los botones aquí */
+    
   }
   
  

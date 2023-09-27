@@ -29,3 +29,22 @@ body{
 }
 
 
+section{
+  display: flex;
+  width: auto;
+  height: 300px;
+}
+
+section img{
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .6;
+}
+
+section img:hover{
+  cursor: crosshair;
+  width: 350px;
+  opacity: 1;
+  filter: contrast(120%);
+}

@@ -43,10 +43,6 @@ export class CarruselComponent implements OnInit, OnDestroy {
     this.postsSub.unsubscribe();
   }
 
-  images: string[] = [
-    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmfVuxe_G4wXjp9QkhEl8EXhqCvgTpcYOqAw&usqp=CAU',
-    
-  ];
   currentIndex: number = 0;
 
   prevSlide() {

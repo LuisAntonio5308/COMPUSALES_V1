@@ -36,7 +36,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 import { ToolbarOverviewExample } from './Posts/toolbar-overview-example/toolbar.component';
 import { CarruselComponent } from './Posts/carrusel/carrusel.component';
-import { PostDataService } from './Posts/post-data.service';
+
 
 
 

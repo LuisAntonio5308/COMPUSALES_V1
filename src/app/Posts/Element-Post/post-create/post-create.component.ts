@@ -26,8 +26,6 @@ export class PostCreateComponent {
     }
     
     const post:Post = {
-
-      
       title: form.value.title,
       content: form.value.content,
       price: this.enteredPrice// Asegúrate de tener la propiedad "enteredPrice" en el componente
