@@ -53,37 +53,3 @@ export class CarruselComponent implements OnInit, OnDestroy {
     this.currentIndex = (this.currentIndex + 1) % this.posts.length;
   }
 }
-
-
-
-
-
- // Agrega el servicio aquí si no lo has hecho
-
-
-
-/*import { Component } from '@angular/core';
-
-@Component({
-  selector: 'app-carrusel',
-  templateUrl: './carrusel.component.html',
-  styleUrls: ['./carrusel.component.css']
-})
-export class CarruselComponent {
-  images: string[] = [
-    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmfVuxe_G4wXjp9QkhEl8EXhqCvgTpcYOqAw&usqp=CAU',
-    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmfVuxe_G4wXjp9QkhEl8EXhqCvgTpcYOqAw&usqp=CAU',
-    'hhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmfVuxe_G4wXjp9QkhEl8EXhqCvgTpcYOqAw&usqp=CAU',
-    // Agrega más URLs de imágenes según sea necesario
-  ];
-  currentIndex: number = 0;
-
-  prevSlide() {
-    this.currentIndex = (this.currentIndex - 1 + this.images.length) % this.images.length;
-  }
-
-  nextSlide() {
-    this.currentIndex = (this.currentIndex + 1) % this.images.length;
-  }
-}
-*/

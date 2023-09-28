@@ -5,13 +5,6 @@ import {MatButtonModule} from '@angular/material/button';
 import { PostCreateComponent } from '../Element-Post/post-create/post-create.component';
 
 
-export interface DialogData {
-  animal: 'panda' | 'unicorn' | 'lion';
-}
-
-/**
- * @title Injecting data when opening a dialog
- */
 @Component({
     selector: 'app-dialog',
     templateUrl: 'dialog.component.html',
@@ -25,21 +18,4 @@ export class DialogComponent {
   openDialog() {
     this.dialog.open(PostCreateComponent);
   }
-}
-/*
-this.dialog.open(DialogDataExampleDialog, {
-  data: {
-    animal: 'lion',
-  },
-});*/
-
-
-@Component({
-  selector: 'dialog-data-example-dialog',
-  templateUrl: 'dialog-data-example-dialog.html',
-  standalone: true,
-  imports: [MatDialogModule, NgIf],
-})
-export class DialogDataExampleDialog {
-  constructor(@Inject(MAT_DIALOG_DATA) public data: DialogData) {}
 }

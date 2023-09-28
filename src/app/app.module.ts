@@ -38,14 +38,6 @@ import { ToolbarOverviewExample } from './Posts/toolbar-overview-example/toolbar
 import { CarruselComponent } from './Posts/carrusel/carrusel.component';
 
 
-
-
-
-
-
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,8 +47,6 @@ import { CarruselComponent } from './Posts/carrusel/carrusel.component';
     PostListComponent,
     PostCreateComponent,
     CarruselComponent,
-    
-    
   ],
   imports: [
     BrowserModule,
